@@ -33,8 +33,8 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void GameOver()
-    {
-        Debug.Log("💀 Game Over!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+{
+    Debug.Log("💀 Game Over!");
+    FindObjectOfType<GameManageer>().GameOver();
+}
 }
